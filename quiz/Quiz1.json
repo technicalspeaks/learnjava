@@ -1,0 +1,26 @@
+{
+
+	"results": [{
+			"atype": "text",
+			"question": "Which of the following option leads to the portability and security of Java?",
+			"question_image": "",
+			"correct_answer": "Bytecode is executed by JVM",
+			"incorrect_answers": ["The applet makes the Java code secure and portable", "Use of exception handling", "Dynamic binding between objects"]
+		},
+		{
+			"atype": "text",
+			"question": "What should be the execution order, if a class has a method, static block, instance block, and constructor, as shown below?",
+			"question_image": "codeque1.png",
+			"correct_answer": "Static block, instance block, constructor, and method",
+			"incorrect_answers": ["Static block, method, instance block, and constructor", "Instance block, method, static block, and constructor", "Method, constructor, instance block, and static block"]
+		},
+		{
+			"atype": "image",
+			"question": "Which code is correct to print following pattern?",
+			"question_image": "que.png",
+			"correct_answer": "ans1.png",
+			"incorrect_answers": ["ans2.png", "ans3.png", "ans5.png"]
+		}
+
+	]
+}
