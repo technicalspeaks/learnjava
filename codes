@@ -1,0 +1,20 @@
+{
+	"data": [{
+		"category": "Arrays",
+		"subcategory": [{
+				"title": "Convert Character Array To String In Java",
+				"description": "Strings are defined as an array of characters. The difference between a character array and a string is the string is terminated with a special character “\\0”. A character array can be converted to a string and vice versa. In the previous article, we have already discussed how to convert a string to a character array. In this article, we will discuss how to convert a character array to a string.\n\nExamples:\nInput: char s[] = { ‘g’, ‘e’, ‘e’, ‘k’, ‘s’, ‘f’, ‘o’, ‘r’, ‘g’, ‘e’, ‘e’, ‘k’, ‘s’ }\nOutput: “geeksforgeeks”\n\nInput: char s[] = { ‘c’, ‘o’, ‘d’, ‘i’, ‘n’, ‘g’ }\nOutput: “coding”\n\nThe given character can be passed into the String constructor. By default, the character array contents are copied using the Arrays.copyOf() method present in the Arrays class.\n\nBelow is the implementation of the above approach:",
+				"input": "",
+				"code": "public class GFG { \n  \n    // Function to convert a character \n    // array to a string using the \n    // constructor \n    public static String toString(char[] a) \n    { \n        String string = new String(a); \n        return string; \n    } \n  \n    // Driver code \n    public static void main(String args[]) \n    { \n  \n        // Character array \n        char s[] = { 'g', 'e', 'e', 'k', \n                     's', 'f', 'o', 'r', \n                     'g', 'e', 'e', 'k', 's' }; \n  \n        // Print final output of char arr[]->string \n        System.out.println(toString(s)); \n    } \n} ",
+				"output": "geeksforgeeks"
+			},
+			{
+				"title": "Pair with a given sum",
+				"description": "Given an array that is sorted and then rotated around an unknown point. Find if the array has a pair with a given sum ‘x’. It may be assumed that all elements in the array are distinct.",
+				"input": "6 //number of elements in array\n  11 15 6 8 9 10 //elements of array\n  16 //sum",
+				"code": "class PairInSortedRotated \n{ \n\t// This function returns true if arr[0..n-1] \n\t// has a pair with sum equals to x. \n\tstatic boolean pairInSortedRotated(int arr[], \n\t\t\t\t\t\t\t\t\tint n, int x) \n\t{ \n\t\t// Find the pivot element \n\t\tint i; \n\t\tfor (i = 0; i < n - 1; i++) \n\t\t\tif (arr[i] > arr[i+1]) \n\t\t\t\tbreak; \n\t\t\t\t\n\t\tint l = (i + 1) % n; // l is now index of\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t// smallest element \n\t\t\t\t\t\t\n\t\tint r = i;\t // r is now index of largest \n\t\t\t\t\t\t//element \n\t\n\t\t// Keep moving either l or r till they meet \n\t\twhile (l != r) \n\t\t{ \n\t\t\t// If we find a pair with sum x, we \n\t\t\t// return true \n\t\t\tif (arr[l] + arr[r] == x) \n\t\t\t\treturn true; \n\t\n\t\t\t// If current pair sum is less, move \n\t\t\t// to the higher sum \n\t\t\tif (arr[l] + arr[r] < x) \n\t\t\t\tl = (l + 1) % n; \n\t\t\t\t\t\n\t\t\telse // Move to the lower sum side \n\t\t\t\tr = (n + r - 1) % n; \n\t\t} \n\t\treturn false; \n\t} \n\n\t/* Driver program to test above function */\n\tpublic static void main (String[] args) \n\t{ \n      Scanner sc=new Scanner(System.in);\n      \n      int array_length=sc.nextInt();\n      \n      int arr[]=new int[array_length];\n      \n      for(int i=0;<array_length;i++){\n        arr[i]=sc.nextInt();\n      }\n\t\t\n\t\tint sum = sc.nextInt(); \n\t\tint n = arr.length; \n\t\n\t\tif (pairInSortedRotated(arr, n, sum)) \n\t\t\tSystem.out.print(\"Array has two elements\" + \n\t\t\t\t\t\t\t\" with sum 16\"); \n\t\telse\n\t\t\tSystem.out.print(\"Array doesn't have two\" + \n\t\t\t\t\t\t\t\" elements with sum 16 \"); \n\t} \n} ",
+				"output": "Array has two elements with sum 16"
+			}
+		]
+	}]
+}
