@@ -1,0 +1,40 @@
+{
+	"data": [{
+			"category": "Introduction",
+			"subcategory": [{
+					"title": "Introduction",
+					"description": "Java is a popular programming language, created in 1995.\n\nIt is owned by Oracle, and more than 3 billion devices run Java.\n\nIt is used for:\n\nMobile applications (specially Android apps)\nDesktop applications\nWeb applications\nWeb servers and application servers\nGames\nDatabase connection\nAnd much, much more!",
+					"code": "",
+					"output": ""
+				},
+				{
+					"title": "Why Use Java?",
+					"description": "Java works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc.)\nIt is one of the most popular programming language in the world\nIt is easy to learn and simple to use\nIt is open-source and free\nIt is secure, fast and powerful\nIt has a huge community support (tens of millions of developers)\nJava is an object oriented language which gives a clear structure to programs and allows code to be reused, lowering development costs\nAs Java is close to C++ and C#, it makes it easy for programmers to switch to Java or vice versa",
+					"code": "",
+					"output": ""
+				},
+				{
+					"title": "Installing",
+					"description": "Some PCs might have Java already installed.\n\nTo check if you have Java installed on a Windows PC, search in the start bar for Java or type the following in Command Prompt (cmd.exe):\n\nC:\\Users\\Your Name>java -version\nIf Java is installed, you will see something like this (depending on version):\n\njava version \"11.0.1\" 2018-10-16 LTS\nJava(TM) SE Runtime Environment 18.9 (build 11.0.1+13-LTS)\nJava HotSpot(TM) 64-Bit Server VM 18.9 (build 11.0.1+13-LTS, mixed mode)\nIf you do not have Java installed on your computer, you can download it for free from oracle.com.\n\nNote: In this tutorial, we will write Java code in a text editor. However, it is possible to write Java in an Integrated Development Environment, such as IntelliJ IDEA, Netbeans or Eclipse, which are particularly useful when managing larger collections of Java files.",
+					"code": "",
+					"output": ""
+				},
+				{
+					"title": "Setup for Windows",
+					"description": "To install Java on Windows:\n\n1. Go to \"System Properties\" (Can be found on Control Panel > System and Security > System > Advanced System Settings)\n2. Click on the \"Environment variables\" button under the \"Advanced\" tab\n3. Then, select the \"Path\" variable in System variables and click on the \"Edit\" button\n4. Click on the \"New\" button and add the path where Java is installed, followed by \\bin. By default, Java is installed in C:\\Program Files\\Java\\jdk-11.0.1 (If nothing else was specified when you installed it). In that case, You will have to add a new path with: C:\\Program Files\\Java\\jdk-11.0.1\\bin\nThen, click \"OK\", and save the settings\n5. At last, open Command Prompt (cmd.exe) and type java -version to see if Java is running on your machine",
+					"code": "",
+					"output": ""
+				}
+			]
+		},
+		{
+			"category": "Java Quickstart",
+			"subcategory": [{
+				"title": "Hello World",
+				"description": "Java is an object oriented language (OOP). Java objects are part of so-called \"Java classes\".\n\nLet's go over the Hello world program, which simply prints \"Hello, World!\" to the screen.\n\npublic class Main {\n    public static void main(String[] args) {\n        System.out.println(\"This will be printed\");\n    }\n}\nThe first line defines a class called Main.\n\npublic class Main {\nIn Java, every line of code that can actually run needs to be inside a class. This line declares a class named Main, which is public, that means that any other class can access it. This is not important for now, so don't worry. For now, we'll just write our code in a class called Main, and talk about objects later on.\n\nNotice that when we declare a public class, we must declare it inside a file with the same name (Main.java), otherwise we'll get an error when compiling.\n\nWhen running the examples on the site, we will not use the public keyword, since we write all our code in one file.\n\nThe next line is:\n\npublic static void main(String[] args) {\nThis is the entry point of our Java program. the main method has to have this exact signature in order to be able to run our program.\n\npublic again means that anyone can access it.\nstatic means that you can run this method without creating an instance of Main.\nvoid means that this method doesn't return any value.\nmain is the name of the method.\nThe arguments we get inside the method are the arguments that we will get when running the program with parameters. It's an array of strings. We will use it in our next lesson, so don't worry if you don't understand it all now.\n\nSystem.out.println(\"This will be printed\");\nSystem is a pre-defined class that Java provides us and it holds some useful methods and variables.\nout is a static variable within System that represents the output of your program (stdout).\nprintln is a method of out that can be used to print a line.",
+				"code": "public class Main {\n\n    public static void main(String[] args) {\n\n        System.out.println(\"Hello, World!\");\n\n    }\n\n}",
+				"output": "\"Hello, World!\""
+			}]
+		}
+	]
+}
